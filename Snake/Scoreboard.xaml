@@ -1,0 +1,27 @@
+﻿<Window x:Class="Snake.Scoreboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Snake"
+        mc:Ignorable="d"
+        Title="Scoreboard" Height="1080" Width="1980" WindowState="Maximized" WindowStyle="None">
+    <Grid>
+        <!--<Grid.Background>
+            <ImageBrush ImageSource="/images/back/background.png"/>
+        </Grid.Background>-->
+        <Button Content="Back" HorizontalAlignment="Left" Margin="74,62,0,0" VerticalAlignment="Top" Width="84" Height="65" Click="Back_Click"/>
+        <Grid x:Name="Board" VerticalAlignment="Top" HorizontalAlignment="Center" Width="1600" Height="900" Margin="0,40,0,0">
+            <StackPanel x:Name="Board_Stack" Margin="0,10">
+                <Grid x:Name="Leader" Height="100">
+                    <TextBlock x:Name="LeaderNumber" TextAlignment="Center" FontFamily="Arial Rounded MT"
+                               FontSize="60" Foreground="Black" FontWeight="Heavy" FontStyle="Normal" FontStretch="Normal" Text="#" Margin="0,0,1500,0"/>
+                    <TextBlock x:Name="Score" TextAlignment="Center" FontFamily="Arial Rounded MT"
+                               FontSize="60" Foreground="Black" FontWeight="Heavy" FontStyle="Normal" FontStretch="Normal" Text="Score" Margin="994,0,330,0" Width="300"/>
+                    <TextBlock x:Name="LeaderName" TextAlignment="Center" FontFamily="Arial Rounded MT"
+                               FontSize="60" Foreground="Black" FontWeight="Heavy" FontStyle="Normal" FontStretch="Normal" Text="Name" Margin="105,0,611,0"/>
+                </Grid>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
